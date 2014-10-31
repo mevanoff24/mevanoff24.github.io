@@ -1,3 +1,9 @@
+Title Techniqual Reflection Week 1
+
+Version Control, Git, and Github
+
+30 October 2014
+
 1	What are the benefits of version control?
 
 Version control is a very cool and can potentially make your life much easier.  This process will save you time because it is orderly and simple.  From the beginning of writing a program you can ‘save’ your work.  However, version control is not like the common save tool, like Word where when you save your work you replace the current version.  The beautiful part of version control is that when you ‘save’ your work the previous version is not replaced; the new version is added just above the previous version.  This then allows you to track changes by just looking back at an earlier version of the information.  For example, suppose a once-functioning program no longer worked after changes you made.  Therefore by comparing the changes between the current version and the previous known-good version it will reduce the time and effort required to locate and fix the errors.  This is ideal if you want to experiment with a code and or happen to make a mistake as you can just go back to a previous working version.  Version control also makes working with teams less chaotic; as it allows for multiple people to work on the same code in different location without contradicting each others work. 
