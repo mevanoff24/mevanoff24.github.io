@@ -1,4 +1,4 @@
-Title Techniqual Reflection Week 1
+Techniqual Reflection Week 1
 
 Version Control, Git, and Github
 
