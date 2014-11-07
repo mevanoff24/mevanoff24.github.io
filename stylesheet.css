@@ -1,3 +1,76 @@
 html {
-	background-color: red
+	background-color: aqua;
+	font-family: Verdana;
 }
+
+h1 {
+	font-size: 50px;
+	font-family: Comic;
+	left: 10px; 
+}
+
+.navbar {
+	display: inline-block;
+	text-decoration: bold;
+	font-color: black;
+	position: relative;
+	padding: 0 5px 0 5px;
+	left: 800px;
+	bottom: 50px;
+}
+
+#mainphoto {
+	display: block;
+	height: 411px;
+	width: 585px;
+	right: 50px;
+	top: 25px;
+}
+
+.about_me {
+	display: block;
+	top: 300px;
+	padding-right: 100px;
+	margin-right: 30px
+}
+
+.project_img {
+	width: 132px;
+	height: 98px;
+	border-radius: 10px;
+}
+
+table {
+	padding: 30px;
+}
+
+.find_me {
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 0 20px 0 20px;
+	float: right;
+}
+
+/* div {
+	display: inline;
+}
+
+*/
+
+#quote {
+	border-radius: 10px;
+	padding-left: 40px;
+	background-color: navy;
+}
+
+#my_pic {
+}
+
+footer {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
