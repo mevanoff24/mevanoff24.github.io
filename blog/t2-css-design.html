@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link type="text/css" rel="stylesheet" href="../stylesheet/blog-stylesheet.css">
+		<header>
+		<img src="">
+			<h1>CSS Styling</h1>
+			<div class="navbar" id="homepage">
+			<a href="http://mevanoff24.github.io/index.html">
+			Home</a>
+		</div>
+		<div class="navbar"><a href="http://mevanoff24.github.io/blog/index.html">Blog</a></div>
+		<div class="navbar"><a href="projects.html">Projects</a></div>
+		<div class="navbar"><a href="#">Other</a></div>
+		<div class="navbar"><a href="about_me.html">About Me</a></div>
+		</header>
+	</head>
+<body>
+
+	<div>
+		<tr class="T_D">Relative, Absolute, and Fixed Positioning</tr><br>
+		<tr class="T_D">5 November 2014</tr>
+	</div>
+	<hr>
+	<div id="post" class="all">
+		<tr><img id="img_1" src="http://www.hellotecho.com/wp-content/uploads/2010/10/layers-300x225.png"</tr>
+		<tr id="post_1">What are the differences between relative, absolute, and fixed positioning?
+		<p>Before we dive into the relative, absolute, and fixed positioning.  We need to learn more about the background on the subject.  First, we need to wrap our heads around the fact that every single element on a webpage is a block, meaning everything in a webpage is literally rectangles of pixels.  And how these blocks of rectangles are positioned can be static, relative, absolute, or fixed positioning.  Before you add any coding or styles to the element, the default positioning is called static.  Everything, in every page starts out as static.  Static means that the elements will flow into the page just as it normally would.  Static positioning is the very basic and is not affected by top, bottom, left, and right attributes.</p>  
+		<p>Relative position: relative</p> 
+		<p>A relative position element is positioned relative to its normal position.  Ultimately if you set a relative position to an element without any other positioning attributes, it will work exactly the same as the default, static.  However, if you do give it some positioning, like left: 20px and top: 10px, it will shift its position 20 pixels right and 10 pixels down from where it was originally assigned.  This technique is nifty as it then makes it easier to manually shift elements around just by assigning them their own positioning attributes.</p>  
+		<p>Absolute position: absolute</p> 
+		<p>The technical term for absolute is: an absolute positioned element is positioned relative to the first parent element that has a position other than static. If no such element is found, the containing block is <html>.  This may not seem too clear so think of it like this; consider an absolute element being completely removed from the document and placed exactly where you tell it to go, since the element does not work with the other info.  For example, an absolute position can be compared to you placing a picture in your word or publisher document and setting the image so that the words will go right through the picture as if the picture didn’t even exist.  Although absolute can be neat, absolute can possibly be damaging to you site as it can possibly limit its flexibility.</p>
+		<p>Fixed position: fixed</p>
+		<p>Unlike absolute positioning, where it is positioned to the relative to the first parent element, a fixed positioned element is positioned relative to the viewpoint or browser window.  Even if you scroll down or across the page the element will remain exactly where is it not matter how far you scroll.  For example, a fixed positioned element can be compared to that bar at the top of Facebook, since no matter how far down the page you scroll, you will always see it.  Fixed elements can be good or bad, they can allow you to keep the navigation of your site accessible at all times, however often times with smaller screens the element can overlap other features and if used wrong it will diminish your user experience.</p>  
+		<p>All of these positioning have their use in modern browsers, however deciding when to use each one of these can be troubling.  No matter how you decide to use these tools, remember that the user accessibility and user experience is the true end result.</p>  
+</tr>
+	</div>
+</body>
+<footer>
+<div id="facebook"><a href="https://www.facebook.com/matt.evanoff"><img class="find_me" src="http://bsheridan12.github.io/Facebook.png"></a></div>
+			<div id="twitter"><a href="https://twitter.com/MattEvanoff24"><img class="find_me" src="http://bsheridan12.github.io/Twitter.png"></a></div>
+			<div id="linkedin"><a href="https://www.linkedin.com/profile/view?id=204007597&trk=nav_responsive_tab_profile_pic"><img class="find_me "src="http://bsheridan12.github.io/LinkedIn.png"></a></div>
+			<div id="github"><a href="https://github.com/mevanoff24"><img class="find_me" src="http://bsheridan12.github.io/GitHub.png"></a></div>
+			<div id="google+"><a href="https://plus.google.com/u/0/105700888878739499862/posts"><img class="find_me" src="http://bsheridan12.github.io/Google.png"></a></div>
+</footer>
+</html>
