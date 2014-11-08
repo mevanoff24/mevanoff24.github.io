@@ -1,0 +1,41 @@
+html {
+	font-family: Verdana;
+	background-color: #3399CC;
+}
+
+
+.navbar {
+	display: inline-block;
+	position: relative;
+	padding: 0 5px 0 5px;
+	left: 800px;
+	bottom: 50px;
+	}
+
+
+.find_me {
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 0 10px 0 10px;
+	float: right;
+}
+
+#post {
+	width: 50%
+
+}
+
+#img_1 {
+	display: block;
+	height: 200px;
+	width: 300px;
+	border-radius: 10px;
+	float: left;
+}
+
+.all {
+	border: 2px solid black;
+	text-align: justify;
+}
