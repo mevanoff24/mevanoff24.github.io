@@ -1,10 +1,17 @@
 html {
-	background-color: #D9D690;
+	background-color: #CCFF99;
 }
 
 h1 {
 	font-size: 50px;
 	font-family: Lucida;
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	position: relative;
+	bottom: 15px;
 }
 
 body {
@@ -14,9 +21,21 @@ body {
 .navbar {
 	display: inline-block;
 	position: relative;
-	padding: 0 5px 0 5px;
-	left: 800px;
-	bottom: 50px;
+	padding: 0 25px 0 25px;
+	left: 0px;
+	bottom: 0px;
+	border-left: 2px;
+}
+
+#navbar {
+	text-align: center;
+	border: 2px solid black;
+	margin: 0 250px 0 250px;
+	padding: 10px;
+	border-radius: 8px;
+}
+
+a {
 	text-decoration: none;
 }
 
@@ -25,31 +44,24 @@ a:link {
 }
 a:hover {
 	color: black;
-	font-size: 120%;
+	font-size: 110%;
 }
 
 a:visited {
 	color: black;
 }
 
-a:active {
-	font-size: 120%;
-}
 
 #mainphoto {
-	display: block;
 	height: 400px;
-	width: 590px;
+	width: 830px;
 	border-radius: 10px;
-}
-
-#about_me {
 	text-align: center;
-	float: center;
+	border: 2px solid black;
 }
 
 .about_me {
-	display: block;
+	position: relative;
 	text-align: center;
 }
 
@@ -100,4 +112,10 @@ table {
 
 footer {
 	text-align: center;
+}
+
+.top {
+	position: relative;
+	text-align: center;
+	top: 20px;
 }
