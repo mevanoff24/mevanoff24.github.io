@@ -4,7 +4,7 @@ html {
 
 h1 {
 	font-size: 50px;
-	font-family: Times;
+	font-family: Lucida;
 }
 
 body {
@@ -17,24 +17,26 @@ body {
 	padding: 0 5px 0 5px;
 	left: 800px;
 	bottom: 50px;
+	text-decoration: none;
 }
 
+a:link {
+	text-decoration: none;
+}
 a:hover {
-	outline: dotted black;
+	color: black;
+	font-size: 120%;
 }
 
 a:visited {
-	color: none;
-}
-
-a:active {
 	color: black;
 }
 
+
 #mainphoto {
 	display: block;
-	height: 430px;
-	width: 620px;
+	height: 400px;
+	width: 590px;
 	border-radius: 10px;
 }
 
@@ -59,12 +61,14 @@ table {
 }
 
 .find_me {
-	height: 40px;
-	width: 40px;
 	display: inline-block;
 	border-radius: 5px;
-	padding: 0 10px 0 10px;
-	float: right;
+	padding: 20px 20px 20px 20px;
+}
+
+.icons {
+	height: 40px;
+	width: 40px;
 }
 /*
 #quote {
@@ -74,20 +78,23 @@ table {
 }
 */
 
-footer {
-	position: absolute;
-	text-align: center;
-}
-
 #my_pic {
 	border-radius: 8px;
-}
-
-.bl_tab {
-	margin:10px;
 }
 
 #social {
 	background-color: black;
 	width:100%;
+}
+
+#container {
+	text-align: center;
+	height: 80px;
+	background-color: black;
+	border-radius: 20px;
+	margin: 0 400px 0 400px;
+}
+
+footer {
+	text-align: center;
 }
