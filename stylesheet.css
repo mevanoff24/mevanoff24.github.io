@@ -32,6 +32,9 @@ a:visited {
 	color: black;
 }
 
+a:active {
+	font-size: 120%;
+}
 
 #mainphoto {
 	display: block;
