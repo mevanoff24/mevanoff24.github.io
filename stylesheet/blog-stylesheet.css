@@ -119,3 +119,20 @@ footer {
 	text-align: center;
 	top: 20px;
 }
+
+/*Blog only CSS*/
+#img_1 {
+	display: block;
+	position: relative;
+	border-radius: 10px	
+}
+
+#post {
+	border: 2px solid black;
+	width: 70%;
+}
+
+#img_1 {
+	height: 200px;
+	width: 300px;
+}
