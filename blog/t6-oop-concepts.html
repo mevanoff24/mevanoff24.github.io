@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<meta charset='utf-8'>
+		<title>Matt Evanoff</title>
+		<link type="text/css" rel="stylesheet" href="../stylesheet/blog-stylesheet.css">
+	</head>
+	<body>
+		<h1>Matt Evanoff</h1>
+		<h3>Software Developer</h3>
+		<div id="navbar"><div class="navbar" id="homepage">
+			<a href="http://mevanoff24.github.io/index.html">
+			Home</a></div>
+			<div class="navbar"><a href="http://mevanoff24.github.io/blog/index.html">Blog</a></div>
+		<div class="navbar"><a href="projects.html">Projects</a></div>
+		<div class="navbar"><a href="#">Other</a></div>
+		<div class="navbar"><a href="about_me.html">About Me</a></div></div>
+	<div>
+		<tr class="T_D">Variable Scope</tr><br>
+		<tr class="T_D">2 December 2014</tr>
+	</div>
+	<hr>
+	<div id="post" class="all">
+		<tr><img id="img_1" src="http://www.wellho.net/pix/ruby_variable_scope1.jpg"</tr>
+		<tr id="post_1">
+<p>Time for one of the most important things in Ruby. Drumroll Please. Dadadadadadadadadadadadadada.  Variable Scope! (Cheers throughout the crowd!) I know they are just that cool.  Ok, you got me, maybe not that cool, but variables are extremely important to any program as can make your life a living hell if you don’t know how to use them.  So it is best to learn them now.</p> 
+<p>Alright, back to the beginning, what is a variable?</p> 
+<p>A variable is simple a place to store data.  A variable holds objects in the computer’s memory.  One of the cool things is that Ruby belongs to the family of dynamic languages and variables can contain different values and different types of values over time. A basic example of this would be:</p>
+<p><div>x = 3</div>
+<div>puts x</div> 
+<div>x = 5</div>
+<div>puts x</div>
+<div>This would return</div> 
+<div>3</div>
+<div>5</div></p>
+<p>Cool right? You can also increment “x” by one or many more possibilities.  Therefore if you want to keep you variable constant you can and if you need to continue to change the variable data you can as well.</p> 
+<p>Ok, back to variable scope.  A variable is always given a unique name.  Each unique name has a unique reason.  Ruby has four types of variable scopes, local, global, instance, and class.  As well, as one constant type.  The cool and easy thing about variable scope in Ruby is that each variable type is declared by using a special character at the start of the variable name.
+In addition, Ruby has two pseudo-variables which cannot be assigned values. These are nil which is assigned to uninitialized variables and self which refers to the currently executing object.</p> 
+<p>Local Variables</p>
+<p>Local variables are variables that are valid within a local area of a Ruby source code.  Also referred to as local scope.  A local variable declared in a method cannot be accessed outside of that method. Local variable names must begin with either an underscore or a lower case letter. For example:</p>
+<p>local_variabele = “Hello World”</p>
+<p>Global Variables</p>
+<p>Global variables in Ruby are accessible from anywhere in the Ruby program, regardless of where they are declared.  Variable identifiers can start with special characters also called sigils. A sigil is a symbol attached to an identifier. The Ruby variable sigils are $ and @.  In this case, Global variable names are prefixed with a dollar sign ($). For example:</p>
+<p>$global_variable = “Hello World”</p>
+<p>However, the use of global variables is highly discouraged.  Global variables tend to lead to programming errors and global variables should be used only when you have to.</p> 
+<p>Class Variables</p>
+<p>Another way of thinking of class variables is as global variables within the context of a single class.  A class variable is shared amongst all instances of a class. This means that only one variable value exists for all objects instantiated from this class.  Class variables also use sigils and are declared by prefixing the variable name with two @ characters (@@).  For example:</p>
+<p>@@class_variable = “Hello World”</p>
+<p>Instance Variables</p>
+<p>Instance variables are similar to Class variables except that their values are local to specific instances of an object.  Instance variables are declared in Ruby by prefixing the variable name with a single @ sign. For example:</p>
+<p>@instance_variable = “Hello World”</p>
+<p>Constant Variables</p>
+<p>Constant Variable, once assigned a value, should not be changed.  Constants declared within a class or module are available anywhere within the context of that class or module. Constants declared outside of a class or module are assigned as global scope.</p>
+<p>Pseudo Variables</p> 
+<p>Pseudo variables are different from regular variables. We cannot assign values to pseudo variables.  The self is the receiver of the current method. The nil represents the absence of a value.  These variables are part of the variable scope however are used differently than the other four normal variables.</p> 
+<p>So variable scope isn’t as bad as you think.   But once you master these variables you are well on your way to becoming a Ruby master.</p>  
+<p>Matt</p>
+
+</tr>
+	</div>
+
+			<div id="container"><div class="find_me" id="facebook"><a href="https://www.facebook.com/matt.evanoff"><img class="icons" src="http://bsheridan12.github.io/Facebook.png"></a></div>
+			<div class="find_me" id="twitter"><a href="https://twitter.com/MattEvanoff24"><img class="icons" src="http://bsheridan12.github.io/Twitter.png"></a></div>
+			<div class="find_me" id="linkedin"><a href="https://www.linkedin.com/profile/view?id=204007597&trk=nav_responsive_tab_profile_pic"><img class="icons" src="http://bsheridan12.github.io/LinkedIn.png"></a></div>
+			<div class="find_me" id="github"><a href="https://github.com/mevanoff24"><img class="icons" src="http://bsheridan12.github.io/GitHub.png"></a></div>
+			<div class="find_me" id="google+"><a href="https://plus.google.com/u/0/105700888878739499862/posts"><img class="icons" src="http://bsheridan12.github.io/Google.png"></a></div></div>
+		
+	
+	<footer>Copyright 2014<br>Matt Evanoff</footer>
+</body>	
+</html>
