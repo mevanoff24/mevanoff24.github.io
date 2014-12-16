@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<meta charset='utf-8'>
+		<title>Matt Evanoff</title>
+		<link type="text/css" rel="stylesheet" href="../stylesheet/blog-stylesheet.css">
+	</head>
+	<body>
+		<h1>Matt Evanoff</h1>
+		<h3>Software Developer</h3>
+		<div id="navbar"><div class="navbar" id="homepage">
+			<a href="http://mevanoff24.github.io/index.html">
+			Home</a></div>
+			<div class="navbar"><a href="http://mevanoff24.github.io/blog/index.html">Blog</a></div>
+		<div class="navbar"><a href="projects.html">Projects</a></div>
+		<div class="navbar"><a href="#">Other</a></div>
+		<div class="navbar"><a href="about_me.html">About Me</a></div></div>
+	<div>
+		<tr class="T_D">Intro to Regular Expressions</tr><br>
+		<tr class="T_D">15 December 2014</tr>
+	</div>
+	<hr>
+	<div id="post" class="all">
+		<tr><img id="img_1" src="https://cdn.tutsplus.com/net/uploads/legacy/963_ruby9/ruby-for-newbies.jpg"</tr>
+		<tr id="post_1">
+<p>Regular expressions can be very useful in your programming career and having a good understanding of them will be essential.  A regular expression is used to match a pattern against strings.  Also called Regexps, they are created using the /.../ or the Regexp::new constructor.  Regular expression are basically code using weird symbols to symbolize characters.  Regular expressions are patterns which describe the contents of a string.  They’re used for testing whether a string contains a given pattern, changing or extracting the portions that match.  Here are some examples:</p>
+
+<p><div>string = “hi, how are you?”</div>
+<div>string.sub(/^../, “hey”)</div>
+<div>>// “hey, how are you?”</div></p>
+
+<p>All regex start with /   / so the stuff inside the /   / will be executed.  Above, the ^ refers to the beginning of the string and the dots represent the number of characters.   Therefore, this sub method will replace the first two characters in the string, “hi” with “hey”.</p> 
+<p>The next common regex is the scan method.  Which looks like this: .scan(/…/).  This scan method will spit the string by each three characters.  The /…/ means all characters including spaces.  However if you don’t want to have whitespaces and only letters, numbers, and symbols; the same thing could be done with /\S\S\S/.  You also can us /\d/, which will search for numbers.  For example:</p> 
+
+<p><div>“You have 100 dollars”.scan(/\d+/)</div> 
+<div>>// 100</div></p>
+<p>This will return 100 and because if you add the + to the “d” inside the regex it means that it can be any length of digits.</p>
+
+<p><div>“hello world”.scan(/[alw]/) for a character classes</div>
+<div>>// l l w l</div>  
+<div>“hello world”.scan(/[a-d]/) <div>
+<div>>// d<div></p>
+<p>This should be self-explanatory as this will scan the range.</p>
+<p>The next is match.  For example:</p>
+<p><div>puts “Telephone number cannot contain letters” if “555-555-555q” .match(/[a-z]/)</div>
+<div>>// Telephone number cannot contain letters</div>
+<p>If the above telephone number contains any of the range in the regex you will receive the error message like above because there is a “q” at the end.  Hopefully now you have a decent understanding about Regular Expressions and can use them for themselves.</p>  
+<p>Matt</p>
+</tr>
+	</div>
+
+			<div id="container"><div class="find_me" id="facebook"><a href="https://www.facebook.com/matt.evanoff"><img class="icons" src="http://bsheridan12.github.io/Facebook.png"></a></div>
+			<div class="find_me" id="twitter"><a href="https://twitter.com/MattEvanoff24"><img class="icons" src="http://bsheridan12.github.io/Twitter.png"></a></div>
+			<div class="find_me" id="linkedin"><a href="https://www.linkedin.com/profile/view?id=204007597&trk=nav_responsive_tab_profile_pic"><img class="icons" src="http://bsheridan12.github.io/LinkedIn.png"></a></div>
+			<div class="find_me" id="github"><a href="https://github.com/mevanoff24"><img class="icons" src="http://bsheridan12.github.io/GitHub.png"></a></div>
+			<div class="find_me" id="google+"><a href="https://plus.google.com/u/0/105700888878739499862/posts"><img class="icons" src="http://bsheridan12.github.io/Google.png"></a></div></div>
+		
+	
+	<footer>Copyright 2014<br>Matt Evanoff</footer>
+</body>	
+</html>
