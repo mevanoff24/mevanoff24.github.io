@@ -64,6 +64,7 @@ a:visited {
 .about_me {
 	position: relative;
 	text-align: center;
+	margin: 20px;
 }
 
 .project_img {
