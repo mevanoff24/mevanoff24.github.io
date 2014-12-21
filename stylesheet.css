@@ -15,7 +15,7 @@ h3 {
 }
 
 body {
-	font-family: Verdana;
+	font-family: arial black;
 }
 
 .navbar {
@@ -53,10 +53,11 @@ a:visited {
 
 
 #mainphoto {
-	height: 400px;
-	width: 830px;
+	width: 492px;
+	height: 369px;
 	border-radius: 10px;
 	text-align: center;
+	/*padding: 10px 168px;*/
 	border: 2px solid black;
 }
 
@@ -119,3 +120,8 @@ footer {
 	text-align: center;
 	top: 20px;
 }
+
+#list {
+	margin: 50px;
+}
+
