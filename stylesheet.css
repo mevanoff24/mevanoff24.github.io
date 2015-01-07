@@ -122,22 +122,29 @@ footer {
 
 .list {
 	border: 2px solid white;
-	padding: 5px;
+	border-radius: 12px;
+	padding: 50px;
 }
 
 .b_tab {
-	
+	position: relative;
 }
 
 .entry {
 	position: relative;
+	padding: 10px;
 }
 
 .blog_photo {
 	width: 150px;
 	height: 150px;
 	margin: 2px 5px 5px 0;
-	padding: 4px;
+	padding: 10px;
+	border-radius: 22px;
+}
+
+.blog-title {
+	text-decoration: bold;
 }
 
 /*PROJECT PAGE*/
