@@ -7,7 +7,6 @@
 	</head>
 	<body>
 		<h1>Matt Evanoff</h1>
-		<h3>Software Developer</h3>
 		<ul id="navbar_top">
 			<li class="navbar" id="homepage"><a href="../index.html">Home</a></li>
 			<li class="navbar"><a href="index.html">Blog</a></li>
@@ -15,68 +14,45 @@
 			<li class="navbar"><a href="../resume.html">Resume</a></li>
 			<li class="navbar"><a href="../about_me.html">About Me</a></li>
 		</ul>
-		<tr class="T_D">Intro to Regular Expressions</tr><br>
-		<tr class="T_D">15 December 2014</tr>
-	</div>
-	<hr>
-	<div id="post" class="all">
-		<tr><img id="img_1" src="https://cdn.tutsplus.com/net/uploads/legacy/963_ruby9/ruby-for-newbies.jpg"</tr>
-		<tr id="post_1">
-<p>Regular expressions can be very useful in your programming career and having a good understanding of them will be essential.  A regular expression is used to match a pattern against strings.  Also called Regexps, they are created using the /.../ or the Regexp::new constructor.  Regular expression are basically code using weird symbols to symbolize characters.  Regular expressions are patterns which describe the contents of a string.  They’re used for testing whether a string contains a given pattern, changing or extracting the portions that match.  Here are some examples:</p>
+		<div id="whole">
+			<div class="T_D" id="T">Intro to Regular Expressions</div>
+			<div class="T_D" id="D">15 December 2014</div>
+			<hr>
+			<div id="post" class="all">
+				<div><img id="img_1" src="https://cdn.tutsplus.com/net/uploads/legacy/963_ruby9/ruby-for-newbies.jpg"></div>
+				<div id="post_1">
+					<p>Regular expressions can be very useful in your programming career and having a good understanding of them will be essential.  A regular expression is used to match a pattern against strings.  Also called Regexps, they are created using the /.../ or the Regexp::new constructor.  Regular expression are basically code using weird symbols to symbolize characters.  Regular expressions are patterns which describe the contents of a string.  They’re used for testing whether a string contains a given pattern, changing or extracting the portions that match.  Here are some examples:</p>
 
-<p><div>string = “hi, how are you?”</div>
-<div>string.sub(/^../, “hey”)</div>
-<div>>// “hey, how are you?”</div></p>
+					<p><div>string = “hi, how are you?”</div>
+					<div>string.sub(/^../, “hey”)</div>
+					<div>>// “hey, how are you?”</div></p>
 
-<p>All regex start with /   / so the stuff inside the /   / will be executed.  Above, the ^ refers to the beginning of the string and the dots represent the number of characters.   Therefore, this sub method will replace the first two characters in the string, “hi” with “hey”.</p> 
-<p>The next common regex is the scan method.  Which looks like this: .scan(/…/).  This scan method will spit the string by each three characters.  The /…/ means all characters including spaces.  However if you don’t want to have whitespaces and only letters, numbers, and symbols; the same thing could be done with /\S\S\S/.  You also can us /\d/, which will search for numbers.  For example:</p> 
+					<p>All regex start with /   / so the stuff inside the /   / will be executed.  Above, the ^ refers to the beginning of the string and the dots represent the number of characters.   Therefore, this sub method will replace the first two characters in the string, “hi” with “hey”.</p> 
+					<p>The next common regex is the scan method.  Which looks like this: .scan(/…/).  This scan method will spit the string by each three characters.  The /…/ means all characters including spaces.  However if you don’t want to have whitespaces and only letters, numbers, and symbols; the same thing could be done with /\S\S\S/.  You also can us /\d/, which will search for numbers.  For example:</p> 
 
-<p><div>“You have 100 dollars”.scan(/\d+/)</div> 
-<div>>// 100</div></p>
-<p>This will return 100 and because if you add the + to the “d” inside the regex it means that it can be any length of digits.</p>
+					<p><div>“You have 100 dollars”.scan(/\d+/)</div> 
+					<div>>// 100</div></p>
+					<p>This will return 100 and because if you add the + to the “d” inside the regex it means that it can be any length of digits.</p>
 
-<p><div>“hello world”.scan(/[alw]/) for a character classes</div>
-<div>>// l l w l</div>  
-<div>“hello world”.scan(/[a-d]/) <div>
-<div>>// d<div></p>
-<p>This should be self-explanatory as this will scan the range.</p>
-<p>The next is match.  For example:</p>
-<p><div>puts “Telephone number cannot contain letters” if “555-555-555q” .match(/[a-z]/)</div>
-<div>>// Telephone number cannot contain letters</div>
-<p>If the above telephone number contains any of the range in the regex you will receive the error message like above because there is a “q” at the end.  Hopefully now you have a decent understanding about Regular Expressions and can use them for themselves.</p>  
-<p>Matt</p>
-
-</tr>
-	</div>
-	<div id="sidebar">
-            <div id="blogs">
-                <h3>Latest Blog Entries</h3>
-                <p>Follow my journey through DBC</p>
-                <ul>
-                    <li><a href="http://mikeychang2.github.io/blog/t1-git-blog.html">Version Control</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/c1-chefs-kitchen.html">Culture at DBC</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/t2-css-design.html">HTML/CSS & Positioning</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/t3-arrays-hashes.html">Arrays & Hashes</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/c3-thinking-style.html">Reflections on Gregorc Learning Styles</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/t4-enumerable-methods.html">Enumerable Methods: Group_by</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/c4-tech-issues.html">Lack of Diversity in Tech</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/t5-ruby-classes.html">Ruby Classes: Methods & Variables</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/c5-feedback.html">Learning through Pairing & Feedback</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/c6-stereotype-threat.html">Stereotype Threat & Model Minority Myth</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/t6-oop-concepts.html">OOP Concepts: Classes vs. Modules</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/c7-values.html">Values & Affirmations: Battling Stereotye Threat</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/t7-javascript.html">Ruby vs. JavaScript: Looping</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/c8-conflict.html">Shame & Vulnerability</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/t8-tech.html">Regular Expressions: Basic Patterns & MatchData Objects</a></li>
-                    <li><a href="http://mikeychang2.github.io/blog/c9-site-reflection.html">Reflections on Building My Site</a></li>
-                </ul>
-            </div>
-
-			<div id="container"><div class="find_me" id="facebook"><a href="https://www.facebook.com/matt.evanoff"><img class="icons" src="http://bsheridan12.github.io/Facebook.png"></a></div>
-			<div class="find_me" id="twitter"><a href="https://twitter.com/MattEvanoff24"><img class="icons" src="http://bsheridan12.github.io/Twitter.png"></a></div>
-			<div class="find_me" id="linkedin"><a href="https://www.linkedin.com/profile/view?id=204007597&trk=nav_responsive_tab_profile_pic"><img class="icons" src="http://bsheridan12.github.io/LinkedIn.png"></a></div>
-			<div class="find_me" id="github"><a href="https://github.com/mevanoff24"><img class="icons" src="http://bsheridan12.github.io/GitHub.png"></a></div>
-			<div class="find_me" id="google+"><a href="https://plus.google.com/u/0/105700888878739499862/posts"><img class="icons" src="http://bsheridan12.github.io/Google.png"></a></div></div>
-	<footer>Copyright 2014<br>Matt Evanoff</footer>
-</body>	
+					<p><div>“hello world”.scan(/[alw]/) for a character classes</div>
+					<div>>// l l w l</div>  
+					<div>“hello world”.scan(/[a-d]/) <div>
+					<div>>// d<div></p>
+					<p>This should be self-explanatory as this will scan the range.</p>
+					<p>The next is match.  For example:</p>
+					<p><div>puts “Telephone number cannot contain letters” if “555-555-555q” .match(/[a-z]/)</div>
+					<div>>// Telephone number cannot contain letters</div>
+					<p>If the above telephone number contains any of the range in the regex you will receive the error message like above because there is a “q” at the end.  Hopefully now you have a decent understanding about Regular Expressions and can use them for themselves.</p>  
+					<p>Matt</p>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="container"><div class="find_me" id="facebook"><a href="https://www.facebook.com/matt.evanoff"><img class="icons" src="http://bsheridan12.github.io/Facebook.png"></a></div>
+		<div class="find_me" id="twitter"><a href="https://twitter.com/MattEvanoff24"><img class="icons" src="http://bsheridan12.github.io/Twitter.png"></a></div>
+		<div class="find_me" id="linkedin"><a href="https://www.linkedin.com/profile/view?id=204007597&trk=nav_responsive_tab_profile_pic"><img class="icons" src="http://bsheridan12.github.io/LinkedIn.png"></a></div>
+		<div class="find_me" id="github"><a href="https://github.com/mevanoff24"><img class="icons" src="http://bsheridan12.github.io/GitHub.png"></a></div>
+		<div class="find_me" id="google+"><a href="https://plus.google.com/u/0/105700888878739499862/posts"><img class="icons" src="http://bsheridan12.github.io/Google.png"></a></div></div>
+		<footer>Copyright &copy; 2014 Matt Evanoff</footer>
+	</body>	
 </html>

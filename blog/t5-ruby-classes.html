@@ -7,7 +7,6 @@
 	</head>
 	<body>
 		<h1>Matt Evanoff</h1>
-		<h3>Software Developer</h3>
 		<ul id="navbar_top">
 			<li class="navbar" id="homepage"><a href="../index.html">Home</a></li>
 			<li class="navbar"><a href="index.html">Blog</a></li>
@@ -15,43 +14,46 @@
 			<li class="navbar"><a href="../resume.html">Resume</a></li>
 			<li class="navbar"><a href="../about_me.html">About Me</a></li>
 		</ul>
-		<tr class="T_D">Classes</tr><br>
-		<tr class="T_D">25 November 2014</tr>
-	</div>
-	<hr>
-	<div id="post" class="all">
-		<tr><img id="img_1" src="http://img4.wikia.nocookie.net/__cb20110810041011/simpsons/images/thumb/1/18/Bart%27s_Class_2.PNG/185px-Bart%27s_Class_2.webp"</tr>
-		<tr id="post_1">
-<p>When you think of a “class” you might think back to when you were 16, sitting in front of your boring World History teacher, trying not to fall asleep.  However, I am going to break that nightmare and bring you to a better place; a happy Ruby place.  Since, Ruby is an object-oriented language, Ruby’s classes are one of the things that make Ruby special and superior to other languages.  Classes are vital to Ruby and a great way to store groups of methods and great to contain variables that can actually be used outside its original method.  I always think that it is better to show you and explain later, so a class simply looks like this:</p>
-<p>class Name</p>
- <p># some methods describing the class behavior</p>
-<p>end</p>
-<p>Simple right?  Just like a method?  Well, sort of.  If you think of it, classes are just a container for you to store as many methods as you like and be able to work with all of them with special variables.  A good practice is that classes usually start with uppercase letter (Name), and the methods inside them start with lowercase.  I am going to show a simple bank account Ruby class, to get your mind in the right place:</p>
-<p><div>Class BankAccount</div>
-	<div>def initialize(first_name, last_name)</div>
-		<div>@balance = 0</div>
-		<div>@first_name = first_name</div>
-		<div>@last_name = last_name</div>
-	<div>end</div>
-<div>def deposit(amount)</div>
-		<div>@balance += amount</div>
-	<div>end</div>
-	<div>def withdraw(amount)</div>
-		<div>@balance -= amount</div>
-	<div>end</div>
-<div>end</div></p>
-<p>Here is a class BankAccount, which accepts your first and last name and originally sets your bank account balance to 0.  It will add to your balance if you chose to deposit or take money from your account if you want to withdraw.  As you can see the class BankAccount wraps these three methods and acts like a container for your work.</p>    
-<p>Hopefully the only thing that isn’t familiar to you is the @ signs.  Ruby classes often start with an initialize method, which is special in Ruby.  Initialize can take arguments and within the confines of the method they define instance variables.  Instance variable act very similarly to your typical local variable, but instance variable can be used throughout your entire class.  Cool right?  You then can call your desired variable whenever you would like inside your class.</p>  
-<p>Now hopefully when you think of classes, you have a better illusion in your head.  I guess you can think of a class as the class room that holds all of the students and not your boring World History teacher.</p> 
-<p>Till Next Time,</p>
-<p>Matt</p>
-</tr>
-	</div>
-			<div id="container"><div class="find_me" id="facebook"><a href="https://www.facebook.com/matt.evanoff"><img class="icons" src="http://bsheridan12.github.io/Facebook.png"></a></div>
-			<div class="find_me" id="twitter"><a href="https://twitter.com/MattEvanoff24"><img class="icons" src="http://bsheridan12.github.io/Twitter.png"></a></div>
-			<div class="find_me" id="linkedin"><a href="https://www.linkedin.com/profile/view?id=204007597&trk=nav_responsive_tab_profile_pic"><img class="icons" src="http://bsheridan12.github.io/LinkedIn.png"></a></div>
-			<div class="find_me" id="github"><a href="https://github.com/mevanoff24"><img class="icons" src="http://bsheridan12.github.io/GitHub.png"></a></div>
-			<div class="find_me" id="google+"><a href="https://plus.google.com/u/0/105700888878739499862/posts"><img class="icons" src="http://bsheridan12.github.io/Google.png"></a></div></div>
-		<footer>Copyright 2014<br>Matt Evanoff</footer>
+		<div id="whole">
+			<div class="T_D" id="T">Classes</div>
+			<div class="T_D" id="D">25 November 2014</div>
+			<hr>
+			<div id="post" class="all">
+				<div><img id="img_1" src="http://img4.wikia.nocookie.net/__cb20110810041011/simpsons/images/thumb/1/18/Bart%27s_Class_2.PNG/185px-Bart%27s_Class_2.webp"></div>
+				<div id="post_1">
+					<p>When you think of a “class” you might think back to when you were 16, sitting in front of your boring World History teacher, trying not to fall asleep.  However, I am going to break that nightmare and bring you to a better place; a happy Ruby place.  Since, Ruby is an object-oriented language, Ruby’s classes are one of the things that make Ruby special and superior to other languages.  Classes are vital to Ruby and a great way to store groups of methods and great to contain variables that can actually be used outside its original method.  I always think that it is better to show you and explain later, so a class simply looks like this:</p>
+					<p>class Name</p>
+					<p># some methods describing the class behavior</p>
+					<p>end</p>
+					<p>Simple right?  Just like a method?  Well, sort of.  If you think of it, classes are just a container for you to store as many methods as you like and be able to work with all of them with special variables.  A good practice is that classes usually start with uppercase letter (Name), and the methods inside them start with lowercase.  I am going to show a simple bank account Ruby class, to get your mind in the right place:</p>
+					<p><div>Class BankAccount</div>
+						<div>def initialize(first_name, last_name)</div>
+							<div>@balance = 0</div>
+							<div>@first_name = first_name</div>
+							<div>@last_name = last_name</div>
+						<div>end</div>
+					<div>def deposit(amount)</div>
+							<div>@balance += amount</div>
+						<div>end</div>
+						<div>def withdraw(amount)</div>
+							<div>@balance -= amount</div>
+						<div>end</div>
+					<div>end</div></p>
+					<p>Here is a class BankAccount, which accepts your first and last name and originally sets your bank account balance to 0.  It will add to your balance if you chose to deposit or take money from your account if you want to withdraw.  As you can see the class BankAccount wraps these three methods and acts like a container for your work.</p>    
+					<p>Hopefully the only thing that isn’t familiar to you is the @ signs.  Ruby classes often start with an initialize method, which is special in Ruby.  Initialize can take arguments and within the confines of the method they define instance variables.  Instance variable act very similarly to your typical local variable, but instance variable can be used throughout your entire class.  Cool right?  You then can call your desired variable whenever you would like inside your class.</p>  
+					<p>Now hopefully when you think of classes, you have a better illusion in your head.  I guess you can think of a class as the class room that holds all of the students and not your boring World History teacher.</p> 
+					<p>Till Next Time,</p>
+					<p>Matt</p>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="container"><div class="find_me" id="facebook"><a href="https://www.facebook.com/matt.evanoff"><img class="icons" src="http://bsheridan12.github.io/Facebook.png"></a></div>
+		<div class="find_me" id="twitter"><a href="https://twitter.com/MattEvanoff24"><img class="icons" src="http://bsheridan12.github.io/Twitter.png"></a></div>
+		<div class="find_me" id="linkedin"><a href="https://www.linkedin.com/profile/view?id=204007597&trk=nav_responsive_tab_profile_pic"><img class="icons" src="http://bsheridan12.github.io/LinkedIn.png"></a></div>
+		<div class="find_me" id="github"><a href="https://github.com/mevanoff24"><img class="icons" src="http://bsheridan12.github.io/GitHub.png"></a></div>
+		<div class="find_me" id="google+"><a href="https://plus.google.com/u/0/105700888878739499862/posts"><img class="icons" src="http://bsheridan12.github.io/Google.png"></a></div></div>
+		<footer>Copyright &copy; 2014 Matt Evanoff</footer>
 	</body>	
 </html>
+

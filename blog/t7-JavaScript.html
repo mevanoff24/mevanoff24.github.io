@@ -7,7 +7,6 @@
 	</head>
 	<body>
 		<h1>Matt Evanoff</h1>
-		<h3>Software Developer</h3>
 		<ul id="navbar_top">
 			<li class="navbar" id="homepage"><a href="../index.html">Home</a></li>
 			<li class="navbar"><a href="index.html">Blog</a></li>
@@ -15,74 +14,73 @@
 			<li class="navbar"><a href="../resume.html">Resume</a></li>
 			<li class="navbar"><a href="../about_me.html">About Me</a></li>
 		</ul>
-		<tr class="T_D">Ruby vs. JavaScript</tr><br>
-		<tr class="T_D">9 December 2014</tr>
-	</div>
-	<hr>
-	<div id="post" class="all">
-		<tr><img id="img_1" src="http://media.tumblr.com/c8f411e91740e39ae9be911bdd8b40e2/tumblr_inline_mwmg1319z31rtan47.png"</tr>
-		<tr id="post_1">
-<p>Well, I have to say that I love Ruby.  Ruby seems to be such as easy language to understand and you have the ability to create programs that people without a computer background can actually understand.  I have been working with Ruby and for the past month or so and I have now just launched myself into JavaScript and I have to say that other than the different syntaxes, these object oriented languages are very similar.  I could go on and on about all of the different similar things that these two language share, but in this post, I am going to focus on Ruby classes vs. JavaScript constructor functions. 
-So how are Ruby Classes and JavaScript functions different and how are they similar?  First you can kind of think of functions in JavaScript similar to methods in Ruby. The syntax of declaring a function vs. declaring a method is slightly different.  In Ruby:</p>
-<p><div>def hello</div>
-<div>puts “hello”</div>
-<div>end</div></p>
-<p>In JavaScript, the same logic can be written:</p>
-<p><div>function hello() {</div>
-<div>console.log(“hello”); }</div></p>
-<p>Both these print the word “hello” to the screen in their respective languages.  And as you can see they have their similarities and their differences.  Simplified this works but what happens when we get a little more advanced.</p>  
-<p>So back to the basics.  In Ruby, classes are objects and the unique thing about Ruby classes are you can easily define new instances in Ruby with a special Ruby method called initialize. In JavaScript, objects don’t have formal classes, and don’t get the use of an initialize like in Ruby.  JavaScript instances are created with something called a constructor.  This constructor of an instance is a function that is called with the new operator.  The cool thing about JS is that any function can become a constructor.  Here is an example:</p> 
-<p><div>function square (n) { return n * n; }</div>
-<div>  //=> undefined</div>
-<div>square(2)</div>
-<div>  //=> 4</div>
-<div>square(2).constructor</div>
-<div>  //=> [Function: Number]</div>
-<div>new square(2)</div>
-<div>  //=> {}</div>
-<div>new square(2).constructor</div>
-<div>  //=> [Function: square]</div></p>
-<p>In this example the square function will act as a constructor if you call it with new. This aspect is special in JavaScript.  JavaScript also has something called prototype. These prototypes are their way of defining instances of classes like in Ruby.  Here is an example of the difference between the two languages.</p>
-<p>Ruby</p>
-<p><div>class Person</div>
-  <div>attr_accessor :firstName, :lastName</div></p>
+		<div id="whole">
+			<div class="T_D" id="T">Ruby vs. JavaScript</div>
+			<div class="T_D" id="D">9 December 2014</div>
+			<hr>
+			<div id="post" class="all">
+				<div><img id="img_1" src="http://media.tumblr.com/c8f411e91740e39ae9be911bdd8b40e2/tumblr_inline_mwmg1319z31rtan47.png"></div>
+				<div id="post_1">
+					<p>Well, I have to say that I love Ruby.  Ruby seems to be such as easy language to understand and you have the ability to create programs that people without a computer background can actually understand.  I have been working with Ruby and for the past month or so and I have now just launched myself into JavaScript and I have to say that other than the different syntaxes, these object oriented languages are very similar.  I could go on and on about all of the different similar things that these two language share, but in this post, I am going to focus on Ruby classes vs. JavaScript constructor functions. 
+					So how are Ruby Classes and JavaScript functions different and how are they similar?  First you can kind of think of functions in JavaScript similar to methods in Ruby. The syntax of declaring a function vs. declaring a method is slightly different.  In Ruby:</p>
+					<p><div>def hello</div>
+					<div>puts “hello”</div>
+					<div>end</div></p>
+					<p>In JavaScript, the same logic can be written:</p>
+					<p><div>function hello() {</div>
+					<div>console.log(“hello”); }</div></p>
+					<p>Both these print the word “hello” to the screen in their respective languages.  And as you can see they have their similarities and their differences.  Simplified this works but what happens when we get a little more advanced.</p>  
+					<p>So back to the basics.  In Ruby, classes are objects and the unique thing about Ruby classes are you can easily define new instances in Ruby with a special Ruby method called initialize. In JavaScript, objects don’t have formal classes, and don’t get the use of an initialize like in Ruby.  JavaScript instances are created with something called a constructor.  This constructor of an instance is a function that is called with the new operator.  The cool thing about JS is that any function can become a constructor.  Here is an example:</p> 
+					<p><div>function square (n) { return n * n; }</div>
+					<div>  //=> undefined</div>
+					<div>square(2)</div>
+					<div>  //=> 4</div>
+					<div>square(2).constructor</div>
+					<div>  //=> [Function: Number]</div>
+					<div>new square(2)</div>
+					<div>  //=> {}</div>
+					<div>new square(2).constructor</div>
+					<div>  //=> [Function: square]</div></p>
+					<p>In this example the square function will act as a constructor if you call it with new. This aspect is special in JavaScript.  JavaScript also has something called prototype. These prototypes are their way of defining instances of classes like in Ruby.  Here is an example of the difference between the two languages.</p>
+					<p>Ruby</p>
+					<p><div>class Person</div>
+					  <div>attr_accessor :firstName, :lastName</div></p>
 
-  <p><div>def initialize(firstName, lastName)</div>
-    <div>@firstName = firstName</div>
-    <div>@lastName = lastName</div>
-  <div>end</div></p>
+					  <p><div>def initialize(firstName, lastName)</div>
+					    <div>@firstName = firstName</div>
+					    <div>@lastName = lastName</div>
+					  <div>end</div></p>
 
-  <p><div>def fullName</div>
-    <div>@firstName + " " + @lastName</div>
-  <div>end</div>
-<div>end</div></p>
+					  <p><div>def fullName</div>
+					    <div>@firstName + " " + @lastName</div>
+					  <div>end</div>
+					<div>end</div></p>
 
-<p><div>john = Person.new("Babe", "Ruth")</div>
-<div>john.fullName # "Babe Ruth"</div></p>
-      	
-<p><div>function Person(firstName, lastName) {</div>
-  <div>this.firstName = firstName;</div>
-  <div>this.lastName = lastName;</div>
-<div>}</div></p>
+					<p><div>john = Person.new("Babe", "Ruth")</div>
+					<div>john.fullName # "Babe Ruth"</div></p>
+					      	
+					<p><div>function Person(firstName, lastName) {</div>
+					  <div>this.firstName = firstName;</div>
+					  <div>this.lastName = lastName;</div>
+					<div>}</div></p>
 
-<p><div>Person.prototype.fullName = function() {</div>
-  <div>return this.firstName + " " + this.lastName;</div>
-<div>}</div></p>
+					<p><div>Person.prototype.fullName = function() {</div>
+					  <div>return this.firstName + " " + this.lastName;</div>
+					<div>}</div></p>
 
-<p><div>var john = new Person("Babe", "Ruth");</div>
-<div>john.fullName(); // "Babe Ruth"</div></p>
-<p>As you can see, they both output “fulName.”  Now you can decide which language do you like better, Ruby or JavaScript?</p>
-<p>Matt</p> 
-</tr>
-	</div>
-
-			<div id="container"><div class="find_me" id="facebook"><a href="https://www.facebook.com/matt.evanoff"><img class="icons" src="http://bsheridan12.github.io/Facebook.png"></a></div>
-			<div class="find_me" id="twitter"><a href="https://twitter.com/MattEvanoff24"><img class="icons" src="http://bsheridan12.github.io/Twitter.png"></a></div>
-			<div class="find_me" id="linkedin"><a href="https://www.linkedin.com/profile/view?id=204007597&trk=nav_responsive_tab_profile_pic"><img class="icons" src="http://bsheridan12.github.io/LinkedIn.png"></a></div>
-			<div class="find_me" id="github"><a href="https://github.com/mevanoff24"><img class="icons" src="http://bsheridan12.github.io/GitHub.png"></a></div>
-			<div class="find_me" id="google+"><a href="https://plus.google.com/u/0/105700888878739499862/posts"><img class="icons" src="http://bsheridan12.github.io/Google.png"></a></div></div>
-		
-	
-	<footer>Copyright 2014<br>Matt Evanoff</footer>
-</body>	
+					<p><div>var john = new Person("Babe", "Ruth");</div>
+					<div>john.fullName(); // "Babe Ruth"</div></p>
+					<p>As you can see, they both output “fulName.”  Now you can decide which language do you like better, Ruby or JavaScript?</p>
+					<p>Matt</p> 
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="container"><div class="find_me" id="facebook"><a href="https://www.facebook.com/matt.evanoff"><img class="icons" src="http://bsheridan12.github.io/Facebook.png"></a></div>
+		<div class="find_me" id="twitter"><a href="https://twitter.com/MattEvanoff24"><img class="icons" src="http://bsheridan12.github.io/Twitter.png"></a></div>
+		<div class="find_me" id="linkedin"><a href="https://www.linkedin.com/profile/view?id=204007597&trk=nav_responsive_tab_profile_pic"><img class="icons" src="http://bsheridan12.github.io/LinkedIn.png"></a></div>
+		<div class="find_me" id="github"><a href="https://github.com/mevanoff24"><img class="icons" src="http://bsheridan12.github.io/GitHub.png"></a></div>
+		<div class="find_me" id="google+"><a href="https://plus.google.com/u/0/105700888878739499862/posts"><img class="icons" src="http://bsheridan12.github.io/Google.png"></a></div></div>
+		<footer>Copyright &copy; 2014 Matt Evanoff</footer>
+	</body>	
 </html>
