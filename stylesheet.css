@@ -120,6 +120,12 @@ footer {
 
 /*BLOG INDEX*/
 
+#whole-2 {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .list {
 	border: 2px solid white;
 	border-radius: 12px;
@@ -156,7 +162,12 @@ footer {
 }
 
 table {
-	padding: 30px;
+	padding: 50px;
+
+}
+
+.table-row {
+	border: 2px solid white;
 }
 
 /*ABOUT ME*/
