@@ -1,5 +1,5 @@
 html {
-	background-color: #CCFF99;
+	background: url("http://wallpoper.com/images/00/31/33/51/black-background_00313351.jpg");
 }
 
 h1 {
@@ -8,31 +8,36 @@ h1 {
 	text-align: center;
 }
 
-h3 {
+body {
 	text-align: center;
-	position: relative;
-	bottom: 15px;
+	font-family: Arial;
+	font-size: 15px;
+	color: #C0C0C0;
 }
 
-body {
-	font-family: Verdana;
-}
+
+#nameplate {
+	width: 944px;
+	height: auto;
+	border: 12px solid black;
+	border-radius: 20px;
+}	
 
 .navbar {
 	display: inline-block;
 	position: relative;
-	padding: 0 25px 0 25px;
-	left: 0px;
-	bottom: 0px;
-	border-left: 2px;
+	padding: 8px 40px 8px 40px;
+	font-size: 20px;
+	color: #484848; 
+	font-family: Courier;
+	text-transform: uppercase;
 }
 
-#navbar {
+#navbar_top {	
+	background: url("../imgs/nav_top_background.png") no-repeat;
+	background-position: center;
 	text-align: center;
-	border: 2px solid black;
-	margin: 0 250px 0 250px;
-	padding: 10px;
-	border-radius: 8px;
+	padding: 13px 0 13px 0;
 }
 
 a {
@@ -41,29 +46,114 @@ a {
 
 a:link {
 	text-decoration: none;
+	color: #C0C0C0; 
 }
 a:hover {
-	color: black;
-	font-size: 110%;
+	color: #959595;
+	font-weight: bold;
+	box-shadow: 0px 0px 19px 3px rgba(114, 161, 200, 1);
+	background-color: rgba(141, 168, 190, 1);
 }
 
 a:visited {
-	color: black;
+	color: #C0C0C0;
 }
 
+a:active {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#whole {
+	background-color: #101010;
+	width: 944px;
+	border: 12px solid black;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -5px;
+	margin-bottom: -5px;
+	border-radius: 20px;
+}
 
 #mainphoto {
-	height: 400px;
-	width: 830px;
+	width: 300px;
+	height: auto;
 	border-radius: 10px;
+}
+
+.top {
+	position: relative;
 	text-align: center;
-	border: 2px solid black;
+	top: 20px;
 }
 
 .about_me {
 	position: relative;
+	margin: 20px;
+}
+
+#container {
+	background: url("../imgs/nav_top_background.png") no-repeat;
+	background-position: center;
 	text-align: center;
 }
+
+.find_me {
+	display: inline-block;
+	padding: 27px 20px 20px 20px;
+}
+
+.icons {
+	height: 40px;
+	width: 40px;
+}
+
+.clear {
+	padding: 10px;
+}
+
+footer {
+	text-align: center;
+	font-size: 12px;
+	padding: 3px;
+}
+
+/*BLOG INDEX*/
+
+#whole-2 {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.list {
+	border: 2px solid white;
+	border-radius: 12px;
+	padding: 50px;
+}
+
+.b_tab {
+	position: relative;
+}
+
+.entry {
+	position: relative;
+	padding: 10px;
+}
+
+.blog_photo {
+	width: 150px;
+	height: 150px;
+	margin: 2px 5px 5px 0;
+	padding: 10px;
+	border-radius: 22px;
+}
+
+.blog-title {
+	text-decoration: bold;
+}
+
+/*PROJECT PAGE*/
 
 .project_img {
 	width: 132px;
@@ -72,53 +162,21 @@ a:visited {
 }
 
 table {
-	padding: 30px;
+	padding: 50px;
+
 }
 
-.find_me {
-	display: inline-block;
-	border-radius: 5px;
-	padding: 20px 20px 20px 20px;
+.table-row {
+	border: 2px solid white;
 }
 
-.icons {
-	height: 40px;
-	width: 40px;
-}
-/*
-#quote {
-	border-radius: 10px;
-	padding-left: 40px;
-	background-color: navy;
-}
-*/
+/*ABOUT ME*/
 
 #my_pic {
 	border-radius: 8px;
 }
 
-#social {
-	background-color: black;
-	width:100%;
-}
 
-#container {
-	text-align: center;
-	height: 80px;
-	background-color: black;
-	border-radius: 20px;
-	margin: 0 400px 0 400px;
-}
-
-footer {
-	text-align: center;
-}
-
-.top {
-	position: relative;
-	text-align: center;
-	top: 20px;
-}
 
 /*Blog only CSS*/
 #img_1 {
