@@ -9,19 +9,11 @@ h1 {
 }
 
 body {
-	text-align: center;
 	font-family: Arial;
 	font-size: 15px;
 	color: #C0C0C0;
 }
 
-
-#nameplate {
-	width: 944px;
-	height: auto;
-	border: 12px solid black;
-	border-radius: 20px;
-}	
 
 .navbar {
 	display: inline-block;
@@ -75,22 +67,6 @@ a:active {
 	border-radius: 20px;
 }
 
-#mainphoto {
-	width: 300px;
-	height: auto;
-	border-radius: 10px;
-}
-
-.top {
-	position: relative;
-	text-align: center;
-	top: 20px;
-}
-
-.about_me {
-	position: relative;
-	margin: 20px;
-}
 
 #container {
 	background: url("../imgs/nav_top_background.png") no-repeat;
@@ -118,79 +94,28 @@ footer {
 	padding: 3px;
 }
 
-/*BLOG INDEX*/
-
-#whole-2 {
-	width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.list {
-	border: 2px solid white;
-	border-radius: 12px;
-	padding: 50px;
-}
-
-.b_tab {
-	position: relative;
-}
-
-.entry {
-	position: relative;
-	padding: 10px;
-}
-
-.blog_photo {
-	width: 150px;
-	height: 150px;
-	margin: 2px 5px 5px 0;
-	padding: 10px;
-	border-radius: 22px;
-}
-
-.blog-title {
-	text-decoration: bold;
-}
-
-/*PROJECT PAGE*/
-
-.project_img {
-	width: 132px;
-	height: 98px;
-	border-radius: 10px;
-}
-
-table {
-	padding: 50px;
-
-}
-
-.table-row {
-	border: 2px solid white;
-}
-
-/*ABOUT ME*/
-
-#my_pic {
-	border-radius: 8px;
-}
-
-
-
 /*Blog only CSS*/
+
 #img_1 {
+	float: left;
 	display: block;
 	position: relative;
-	border-radius: 10px	
-}
-
-#post {
-	border: 2px solid black;
-	width: 70%;
-}
-
-#img_1 {
+	border-radius: 20px;	
 	height: 200px;
 	width: 300px;
+	padding: 8px;
+}
+
+.T_D {
+	text-align: center;
+	padding: 8px;
+}
+
+#T {
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+#D {
+	font-size: 18px;
 }
