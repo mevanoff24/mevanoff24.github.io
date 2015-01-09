@@ -10,7 +10,7 @@ h1 {
 
 body {
 text-align: center;
-font-family: Arial;
+font-family: Copperplate;
 font-size: 15px;
 color: #C0C0C0;
 }
@@ -90,6 +90,7 @@ a:active {
 .about_me {
 	position: relative;
 	margin: 20px;
+	text-align: justify;
 }
 
 #container {
