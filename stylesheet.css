@@ -90,7 +90,8 @@ a:active {
 .about_me {
 	position: relative;
 	margin: 20px;
-	text-align: justify;
+	font-size: 25px;
+	text-align: center;
 }
 
 #container {
@@ -177,10 +178,11 @@ table {
 	border-radius: 8px;
 }
 
-#about_me {
-	width: 70%;
+#about_me_2 {
+	width: 76%;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px;
+	text-align: justify;
 }
 
