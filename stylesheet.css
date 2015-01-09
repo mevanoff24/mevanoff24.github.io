@@ -3,9 +3,23 @@ html {
 }
 
 h1 {
+	color: white;
 	font-size: 50px;
 	font-family: Lucida;
 	text-align: center;
+  	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+
 }
 
 body {
@@ -51,8 +65,14 @@ a:link {
 a:hover {
 	color: #959595;
 	font-weight: bold;
-	box-shadow: 0px 0px 19px 3px rgba(114, 161, 200, 1);
-	background-color: rgba(141, 168, 190, 1);
+	text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 30px #fff,
+                 0 0 40px #ff00de,
+                 0 0 70px #ff00de,
+                 0 0 80px #ff00de,
+                 0 0 100px rgba(141, 168, 190, 1),
+                 0 0 150px rgba(114, 161, 200, 1);
 }
 
 a:visited {
@@ -87,12 +107,28 @@ a:active {
 	top: 20px;
 }
 
-.about_me {
-	position: relative;
-	margin: 20px;
-	font-size: 25px;
-	text-align: center;
+ p.shine {
+    font-size: 25px;
+    margin: 20px;
 }
+
+.shine {
+    background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+    -webkit-background-size: 125px;
+    color: rgba(255, 255, 255, 0.1);
+    -webkit-background-clip: text; 
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shine { 0%
+    { background-position: top left;
+    } 100%
+    { background-position: top right;
+    }
+}
+
 
 #container {
 	background: url("imgs/nav_top_background.png") no-repeat;
